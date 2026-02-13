@@ -4036,7 +4036,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get worldBookEntryKeywordsHint =>
-      'Type a keyword and tap +. You can paste multiple, separated by commas or new lines.';
+      'Type a keyword and tap +. You can paste multiple, separated by new lines.';
 
   @override
   String get worldBookEntryKeywordInputHint => 'Type a keyword';

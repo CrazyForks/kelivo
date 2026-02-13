@@ -1010,10 +1010,9 @@ class _WorldBookEntryEditDialogState extends State<_WorldBookEntryEditDialog> {
   }
 
   void _addKeywordsFromInput() {
-    final text = _keywordInputController.text.trim();
-    if (text.isEmpty) return;
+    final text = _keywordInputController.text;
     final parts = text
-        .split(RegExp(r'[\n,]+'))
+        .split(RegExp(r'[\r\n]+'))
         .map((e) => e.trim())
         .where((e) => e.isNotEmpty)
         .toList(growable: false);
